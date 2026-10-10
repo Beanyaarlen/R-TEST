@@ -1,0 +1,1976 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#173d3c">
+    <title>Karir — Klik Hiro Optima</title>
+    <meta name="description" content="Pratinjau halaman karir Klik Hiro Optima. Temukan posisi dan coba alur formulir lamaran.">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+/* Variabel warna dan pengaturan dasar */
+:root {
+  --ink:#183b39;
+  --gold:#a67d40;
+  --paper:#faf9f5;
+  --muted:#6e7772;
+  --line:#e2e5df;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:30px;
+}
+
+body {
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font:15px 'DM Sans',Arial,sans-serif;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+button,input,select,textarea {
+  font:inherit;
+}
+
+button,a,input,select,textarea {
+  outline-offset:5px;
+}
+
+button {
+  cursor:pointer;
+}
+
+h1,h2,h3,p {
+  margin:0;
+}
+
+h1,h2,h3 {
+  font-family:Manrope,Arial,sans-serif;
+}
+
+h2 {
+  font-size:38px;
+  letter-spacing:-1.5px;
+  line-height:1.2;
+}
+
+p {
+  line-height:1.7;
+}
+
+/* Banner pratinjau dan navigasi */
+.demo {
+  background:#183b39;
+  color:#fff;
+  padding:9px 5%;
+  font-size:10px;
+  letter-spacing:1.5px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.demo span {
+  letter-spacing:0;
+  color:#d4ddd6;
+}
+
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:25px 5%;
+  background:#fff;
+  gap:20px;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:14px;
+  font-weight:800;
+  font-size:12px;
+  letter-spacing:1.3px;
+}
+
+.brand small {
+  display:block;
+  font-size:8px;
+  letter-spacing:2px;
+  margin-top:5px;
+  font-weight:500;
+}
+
+.brand-mark {
+  font-size:27px;
+  letter-spacing:-3px;
+  color:#173d3c;
+  position:relative;
+  border-left:4px solid #bc9353;
+  padding-left:6px;
+}
+
+.brand-mark>span {
+  color:var(--gold);
+}
+
+nav {
+  display:flex;
+  gap:30px;
+  font-size:12px;
+}
+
+nav a.active {
+  border-bottom:2px solid var(--gold);
+  padding-bottom:7px;
+}
+
+.button {
+  background:var(--gold);
+  color:white;
+  border:1px solid var(--gold);
+  padding:16px 24px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:25px;
+  border-radius:5px;
+  font-size:13px;
+  font-weight:600;
+  transition:background .2s,transform .2s;
+}
+
+.button:hover {
+  background:#8e6932;
+  transform:translateY(-1px);
+}
+
+.button.small {
+  padding:12px 18px;
+  font-size:11px;
+}
+
+/* Hero dan ilustrasi interior */
+.hero {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:585px;
+}
+
+.hero-copy {
+  padding:76px 8% 56px 10%;
+}
+
+.eyebrow {
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:2.3px;
+  color:var(--gold);
+  margin-bottom:23px;
+}
+
+h1 {
+  font-size:clamp(38px,4.6vw,67px);
+  letter-spacing:-3px;
+  line-height:1.1;
+  font-weight:800;
+}
+
+h1 em {
+  font-style:normal;
+  color:var(--gold);
+}
+
+.intro {
+  margin-top:26px;
+  max-width:390px;
+  color:var(--muted);
+  font-size:15px;
+}
+
+.hero-actions {
+  display:flex;
+  align-items:center;
+  gap:30px;
+  margin-top:32px;
+}
+
+.text-link {
+  font-size:12px;
+  border-bottom:1px solid #b6c2ba;
+  padding:8px 0;
+}
+
+.text-link span {
+  margin-left:12px;
+}
+
+.hero-note {
+  border-top:1px solid var(--line);
+  padding-top:23px;
+  margin-top:40px;
+  font-size:11px;
+  color:var(--muted);
+}
+
+.dot {
+  display:inline-block;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--gold);
+  margin-right:8px;
+}
+
+.hero-art {
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(90deg,#424b3fbb,#7c7860aa),repeating-linear-gradient(90deg,#817653 0 5px,#b6a47e 5px 9px);
+  isolation:isolate;
+}
+
+.hero-art:after {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(0deg,#122725e8,transparent 70%);
+  z-index:2;
+}
+
+.window {
+  position:absolute;
+  right:0;
+  top:0;
+  width:40%;
+  height:68%;
+  background:linear-gradient(160deg,#e9e4cf,#adbea8);
+  border-left:12px solid #313e36;
+  box-shadow:inset 0 -10px 0 #313e36;
+}
+
+.window:before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,transparent 47%,#313e36 47% 51%,transparent 51%),linear-gradient(0deg,transparent 49%,#313e36 49% 52%,transparent 52%);
+}
+
+.shelf {
+  position:absolute;
+  left:8%;
+  top:12%;
+  width:40%;
+  height:46%;
+  background:repeating-linear-gradient(0deg,#343b2f 0 65px,#8c744e 65px 74px);
+  border:12px solid #685b41;
+  box-shadow:0 0 30px #e8c28e30;
+}
+
+.shelf:after {
+  content:'';
+  position:absolute;
+  top:22%;
+  left:12%;
+  height:55px;
+  width:38%;
+  background:repeating-linear-gradient(90deg,#b7ae92 0 7px,#777b68 7px 12px);
+  box-shadow:35px 130px 0 #9b8e6b;
+}
+
+.sofa {
+  position:absolute;
+  width:68%;
+  height:140px;
+  border-radius:28px 28px 4px 4px;
+  background:linear-gradient(#c4bea4,#938c72);
+  bottom:16%;
+  left:17%;
+  box-shadow:inset 0 -48px 0 #b4ac91,0 18px 40px #17282055;
+}
+
+.sofa:before {
+  content:'';
+  position:absolute;
+  left:5%;
+  top:18%;
+  width:25%;
+  height:65px;
+  border-radius:10px;
+  background:#5d6f5e;
+  transform:rotate(-9deg);
+}
+
+.table {
+  position:absolute;
+  bottom:15%;
+  left:12%;
+  width:45%;
+  height:40px;
+  background:#594d37;
+  border-radius:50%;
+  box-shadow:0 10px 0 #392f20;
+}
+
+.lamp {
+  position:absolute;
+  top:0;
+  left:49%;
+  height:23%;
+  width:2px;
+  background:#2a3229;
+}
+
+.lamp:after {
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:-42px;
+  width:85px;
+  height:42px;
+  border-radius:80px 80px 0 0;
+  background:#c9a468;
+  box-shadow:0 20px 45px #fce2a0aa;
+}
+
+.art-caption {
+  position:absolute;
+  left:8%;
+  bottom:8%;
+  color:white;
+  z-index:3;
+}
+
+.art-caption span {
+  font-size:8px;
+  letter-spacing:2px;
+  color:#d9c5a0;
+}
+
+.art-caption p {
+  font-size:23px;
+  line-height:1.4;
+  margin-top:15px;
+  letter-spacing:-.5px;
+}
+
+.image-label {
+  position:absolute;
+  right:20px;
+  top:20px;
+  font-size:9px;
+  color:#eee;
+  z-index:3;
+  background:#26382f66;
+  padding:7px 9px;
+  border-radius:3px;
+}
+
+/* Nilai dan pengantar perusahaan */
+.values {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  padding:40px 6%;
+  gap:40px;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+.values>div+div {
+  border-left:1px solid var(--line);
+  padding-left:40px;
+}
+
+.values span {
+  font-size:9px;
+  color:var(--gold);
+  letter-spacing:1.5px;
+}
+
+.values h3 {
+  font-size:16px;
+  margin:12px 0 7px;
+}
+
+.values p {
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* Pencarian, filter, dan kartu lowongan */
+.jobs-section {
+  padding:80px 8%;
+}
+
+.section-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:25px;
+  margin-bottom:36px;
+}
+
+.section-top>p {
+  font-size:13px;
+  color:var(--muted);
+}
+
+.search-wrap {
+  display:flex;
+  align-items:center;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:8px 18px;
+  gap:15px;
+}
+
+.search-wrap>span {
+  font-size:27px;
+}
+
+.search-wrap input {
+  border:0;
+  flex:1;
+  min-width:0;
+  padding:13px 0;
+  background:none;
+}
+
+.search-wrap select {
+  border:0;
+  border-left:1px solid var(--line);
+  padding:8px 20px;
+  background:white;
+  color:var(--ink);
+}
+
+.filters {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:22px 0 30px;
+}
+
+.filters button {
+  border:1px solid var(--line);
+  background:transparent;
+  padding:9px 17px;
+  border-radius:30px;
+  font-size:11px;
+  color:var(--muted);
+}
+
+.filters button.selected {
+  color:white;
+  background:var(--ink);
+  border-color:var(--ink);
+}
+
+.results-heading {
+  display:flex;
+  justify-content:space-between;
+  font-size:11px;
+  color:var(--muted);
+  margin-bottom:14px;
+}
+
+.results-heading>span+span {
+  font-size:9px;
+  letter-spacing:1.5px;
+}
+
+.job {
+  display:grid;
+  grid-template-columns:48px 1.4fr 1fr auto;
+  align-items:center;
+  gap:22px;
+  width:100%;
+  text-align:left;
+  background:white;
+  border:1px solid var(--line);
+  padding:23px;
+  margin-bottom:10px;
+  border-radius:7px;
+  color:var(--ink);
+  transition:border-color .2s,box-shadow .2s;
+}
+
+.job:hover {
+  border-color:var(--gold);
+  box-shadow:0 4px 18px #163d3907;
+}
+
+.job-icon {
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  background:#f7f3e9;
+  border-radius:6px;
+  color:var(--gold);
+  font-size:23px;
+}
+
+.job h3 {
+  font-size:16px;
+  margin-bottom:7px;
+}
+
+.job p {
+  font-size:10px;
+  color:var(--muted);
+}
+
+.job-meta {
+  font-size:11px;
+  color:var(--muted);
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+
+.job-arrow {
+  font-size:23px;
+}
+
+.badge {
+  display:inline-block;
+  background:#f2eadb;
+  color:#8d6831;
+  font-size:9px;
+  padding:4px 8px;
+  border-radius:3px;
+  margin-left:8px;
+  vertical-align:middle;
+}
+
+.empty {
+  padding:40px;
+  background:white;
+  text-align:center;
+  border:1px dashed var(--line);
+}
+
+.talent {
+  margin-top:30px;
+  background:var(--ink);
+  color:white;
+  padding:38px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+  border-radius:7px;
+}
+
+.talent .eyebrow {
+  color:#c5ab7c;
+  margin-bottom:12px;
+}
+
+.talent h3 {
+  font-size:21px;
+  margin-bottom:8px;
+}
+
+.talent p:not(.eyebrow) {
+  font-size:12px;
+  color:#c5d3ce;
+}
+
+.button.light {
+  background:#eee7d7;
+  color:var(--ink);
+  border-color:#eee7d7;
+  white-space:nowrap;
+}
+
+/* Alur rekrutmen dan footer */
+.process {
+  padding:70px 8%;
+  background:#f0f1eb;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:90px;
+}
+
+.process>div>p:last-child {
+  color:var(--muted);
+  font-size:13px;
+  max-width:320px;
+  margin-top:22px;
+}
+
+.process ol {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.process li {
+  display:flex;
+  gap:24px;
+  padding:0 0 25px;
+  margin:0 0 24px;
+  border-bottom:1px solid #d6ddd4;
+}
+
+.process li:last-child {
+  margin:0;
+  border:0;
+}
+
+.process li>span {
+  font-size:12px;
+  color:var(--gold);
+  padding-top:3px;
+}
+
+.process h3 {
+  font-size:16px;
+  margin-bottom:7px;
+}
+
+.process li p {
+  font-size:12px;
+  color:var(--muted);
+}
+
+footer {
+  padding:35px 5%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  background:#fff;
+}
+
+footer p,footer>a:last-child {
+  font-size:10px;
+  color:var(--muted);
+}
+
+/* Dialog detail posisi dan formulir */
+dialog {
+  width:min(720px,calc(100% - 24px));
+  max-height:90vh;
+  border:0;
+  padding:32px;
+  border-radius:12px;
+  color:var(--ink);
+  background:var(--paper);
+  box-shadow:0 20px 90px #0004;
+}
+
+dialog::backdrop {
+  background:#122c2bac;
+  backdrop-filter:blur(4px);
+}
+
+.modal-top {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:24px;
+  font-size:9px;
+  letter-spacing:1.4px;
+  color:var(--gold);
+}
+
+.close {
+  font-size:27px;
+  border:0;
+  background:none;
+  color:var(--ink);
+  width:36px;
+  height:36px;
+}
+
+.detail-meta {
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin:16px 0;
+  color:var(--muted);
+  font-size:12px;
+}
+
+#detail-body h3 {
+  margin:26px 0 10px;
+  font-size:17px;
+}
+
+#detail-body p,#detail-body li {
+  font-size:13px;
+  line-height:1.8;
+  color:var(--muted);
+}
+
+#detail-body ul {
+  padding-left:20px;
+}
+
+#detail-body .button {
+  margin-top:25px;
+}
+
+.form-subtitle {
+  font-size:12px;
+  color:var(--muted);
+  margin:12px 0 25px;
+}
+
+.steps {
+  display:flex;
+  border-bottom:1px solid var(--line);
+  margin-bottom:25px;
+}
+
+.steps span {
+  flex:1;
+  font-size:10px;
+  padding:12px 2px;
+  color:var(--muted);
+}
+
+.steps span.current {
+  color:var(--gold);
+  border-bottom:2px solid var(--gold);
+  font-weight:700;
+}
+
+fieldset {
+  padding:0;
+  border:0;
+  margin:0;
+}
+
+fieldset[hidden] {
+  display:none;
+}
+
+legend {
+  font-weight:700;
+  font-size:18px;
+  margin-bottom:22px;
+}
+
+.form-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+label {
+  display:flex;
+  flex-direction:column;
+  font-size:11px;
+  gap:8px;
+  margin-bottom:18px;
+  font-weight:600;
+}
+
+label input,label select,label textarea {
+  width:100%;
+  padding:12px;
+  background:white;
+  border:1px solid #dce0d9;
+  border-radius:5px;
+  color:var(--ink);
+  font-size:12px;
+}
+
+label.checkbox {
+  flex-direction:row;
+  align-items:flex-start;
+  font-weight:400;
+  line-height:1.6;
+  gap:10px;
+}
+
+label.checkbox input {
+  width:16px;
+  flex-shrink:0;
+  margin-top:3px;
+  accent-color:var(--gold);
+}
+
+.upload {
+  padding:25px;
+  border:1px dashed #a6b2a5;
+  border-radius:6px;
+  background:white;
+}
+
+.upload span {
+  font-weight:400;
+  color:var(--muted);
+  font-size:10px;
+  line-height:1.6;
+}
+
+.upload input {
+  border:0;
+  padding:10px 0;
+}
+
+#file-info {
+  font-size:11px;
+  color:var(--muted);
+  margin-bottom:20px;
+}
+
+.form-actions {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-top:1px solid var(--line);
+  padding-top:22px;
+  margin-top:24px;
+  gap:10px;
+}
+
+.secondary {
+  border:1px solid var(--line);
+  padding:13px 18px;
+  background:white;
+  border-radius:5px;
+  color:var(--ink);
+}
+
+.secondary:disabled {
+  opacity:.4;
+  cursor:default;
+}
+
+#step-count {
+  font-size:10px;
+  color:var(--muted);
+}
+
+#form-error {
+  font-size:12px;
+  color:#ad3426;
+  margin-top:12px;
+}
+
+.review-row {
+  display:grid;
+  grid-template-columns:1fr 1.6fr;
+  gap:15px;
+  padding:11px 0;
+  border-bottom:1px solid var(--line);
+  font-size:12px;
+  overflow-wrap:anywhere;
+}
+
+.review-row span {
+  color:var(--muted);
+}
+
+.review-note {
+  font-size:11px;
+  color:var(--muted);
+  margin-top:20px;
+}
+
+#success {
+  text-align:center;
+  padding:30px 15px;
+}
+
+#success p {
+  margin:18px auto 25px;
+  color:var(--muted);
+  font-size:13px;
+  max-width:440px;
+}
+
+.success-icon {
+  display:grid;
+  place-items:center;
+  font-size:30px;
+  color:var(--gold);
+  background:#eee7d7;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  margin:0 auto 25px;
+}
+
+.sr-only {
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* Penyesuaian tablet */
+@media(max-width:800px) {
+  nav {
+    display:none;
+  }
+  .hero {
+    grid-template-columns:1fr 1fr;
+    min-height:490px;
+  }
+  .hero-copy {
+    padding:50px 8%;
+  }
+  h1 {
+    font-size:42px;
+    letter-spacing:-2px;
+  }
+  .hero-actions {
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+  .hero-note {
+    margin-top:20px;
+  }
+  .values {
+    gap:20px;
+    padding:30px 5%;
+  }
+  .values>div+div {
+    padding-left:20px;
+  }
+  .section-top {
+    align-items:start;
+  }
+  .section-top>p {
+    max-width:220px;
+  }
+  .jobs-section {
+    padding:55px 5%;
+  }
+  .process {
+    gap:40px;
+    padding:50px 5%;
+  }
+  h2 {
+    font-size:30px;
+  }
+  .job {
+    grid-template-columns:40px 1fr auto;
+    gap:16px;
+  }
+  .job-meta {
+    grid-column:2;
+    grid-row:2;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+  .job-arrow {
+    grid-column:3;
+    grid-row:1/3;
+  }
+  .job {
+    padding:18px;
+  }
+  .talent {
+    padding:25px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  footer p {
+    display:none;
+  }
+}
+
+/* Penyesuaian layar ponsel */
+@media(max-width:540px) {
+  .demo {
+    font-size:8px;
+    letter-spacing:.8px;
+  }
+  .demo span {
+    max-width:170px;
+    text-align:right;
+  }
+  header {
+    padding:20px 5%;
+    gap:10px;
+  }
+  .brand {
+    font-size:9px;
+    gap:9px;
+  }
+  .brand-mark {
+    font-size:23px;
+  }
+  .brand small {
+    font-size:7px;
+    letter-spacing:1px;
+  }
+  .button.small {
+    font-size:10px;
+    padding:10px;
+    gap:10px;
+  }
+  .hero {
+    grid-template-columns:1fr;
+  }
+  .hero-copy {
+    padding:45px 6% 35px;
+  }
+  h1 {
+    font-size:46px;
+  }
+  .hero-art {
+    height:300px;
+  }
+  .intro {
+    font-size:14px;
+  }
+  .hero-actions {
+    flex-direction:row;
+    align-items:center;
+    gap:22px;
+  }
+  .hero-actions .button {
+    padding:14px 16px;
+    font-size:11px;
+    gap:12px;
+  }
+  .art-caption p {
+    font-size:19px;
+  }
+  .values {
+    grid-template-columns:1fr;
+    gap:22px;
+    padding:30px 6%;
+  }
+  .values>div+div {
+    padding-left:0;
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding-top:20px;
+  }
+  .values p {
+    font-size:12px;
+  }
+  .section-top {
+    flex-direction:column;
+    gap:18px;
+  }
+  .section-top>p {
+    max-width:100%;
+  }
+  .search-wrap {
+    padding:8px 12px;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .search-wrap input {
+    font-size:12px;
+  }
+  .search-wrap select {
+    width:100%;
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding:10px 0;
+  }
+  .filters {
+    gap:6px;
+    margin-bottom:25px;
+  }
+  .filters button {
+    padding:8px 12px;
+    font-size:10px;
+  }
+  .job h3 {
+    font-size:14px;
+  }
+  .job-meta {
+    font-size:10px;
+  }
+  .talent h3 {
+    font-size:19px;
+  }
+  .process {
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+  .process h2 br {
+    display:none;
+  }
+  footer {
+    padding:25px 5%;
+  }
+  dialog {
+    padding:22px 18px;
+  }
+  dialog h2 {
+    font-size:26px;
+  }
+  .form-grid {
+    grid-template-columns:1fr;
+    gap:0;
+  }
+  .steps span {
+    font-size:9px;
+  }
+  .form-actions .button {
+    padding:13px 15px;
+    font-size:11px;
+    gap:10px;
+  }
+  .review-row {
+    grid-template-columns:1fr 1.1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+    <div class="demo">
+      PRATINJAU DESAIN <span>Lowongan contoh · Lamaran belum dikirim atau disimpan</span>
+    </div>
+    <header>
+      <a class="brand" href="#home" aria-label="Klik Hiro Optima — Beranda">
+        <span class="brand-mark">K<span>H</span>O</span><span>KLIK HIRO OPTIMA<small>CAREERS & PEOPLE</small></span>
+      </a>
+      <nav aria-label="Navigasi utama">
+        <a href="#tentang">
+          Tentang Kami
+        </a>
+        <a class="active" href="#lowongan">
+          Karir
+        </a>
+        <a href="#proses">
+          Proses Rekrutmen
+        </a>
+      </nav>
+      <a class="button small" href="#lowongan">
+        Lihat Lowongan <span>↗</span>
+      </a>
+    </header>
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            YOUR NEXT CHAPTER STARTS HERE
+          </p>
+          <h1>
+            Bersama, bangun<br>masa depan yang<br><em>lebih terang.</em>
+          </h1>
+          <p class="intro">
+            Temukan ruang untuk bertumbuh bersama Klik Hiro Optima dalam dunia smart living dan solusi elektrikal.
+          </p>
+          <div class="hero-actions">
+            <a href="#lowongan" class="button">
+              Temukan Posisi Anda <span>↗</span>
+            </a>
+            <a href="#tentang" class="text-link">
+              Kenali kami <span>↓</span>
+            </a>
+          </div>
+          <div class="hero-note">
+            <span class="dot"></span> Ide baru. Kolaborasi nyata. Peluang bertumbuh.
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Ilustrasi interior modern dengan pencahayaan hangat">
+          <div class="window"></div>
+          <div class="shelf"></div>
+          <div class="lamp"></div>
+          <div class="sofa"></div>
+          <div class="table"></div>
+          <div class="art-caption">
+            <span>SMART LIVING · BRIGHTER POSSIBILITIES</span>
+            <p>
+              Ruang yang lebih baik.<br>Dimulai dari orang yang tepat.
+            </p>
+          </div>
+          <span class="image-label">Ilustrasi suasana ruang</span>
+        </div>
+      </section>
+      <section class="values" id="tentang">
+        <div>
+          <span>01 / COLLABORATE</span>
+          <h3>Tumbuh bersama tim</h3>
+          <p>
+            Bawa perspektif Anda dalam setiap kolaborasi.
+          </p>
+        </div>
+        <div>
+          <span>02 / CREATE</span>
+          <h3>Wujudkan ide menjadi solusi</h3>
+          <p>
+            Ambil bagian dalam dunia interior dan smart living.
+          </p>
+        </div>
+        <div>
+          <span>03 / GROW</span>
+          <h3>Bangun langkah berikutnya</h3>
+          <p>
+            Temukan peran yang sesuai dengan potensi Anda.
+          </p>
+        </div>
+      </section>
+      <section class="jobs-section" id="lowongan">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">
+              FIND YOUR PLACE
+            </p>
+            <h2>
+              Peluang untuk langkah<br>Anda berikutnya.
+            </h2>
+          </div>
+          <p>
+            Beragam bidang, satu semangat.<br>Jelajahi contoh posisi dalam rancangan karir kami.
+          </p>
+        </div>
+        <div class="search-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Cari posisi atau kata kunci…" aria-label="Cari lowongan">
+          <label for="location" class="sr-only">
+            Lokasi
+          </label>
+          <select id="location">
+            <option value="">
+              Semua lokasi
+            </option>
+            Jakarta
+          </option>
+          Tangerang
+        </option>
+      </select>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Kategori pekerjaan"></div>
+    <div class="results-heading">
+      <span id="count" aria-live="polite"></span><span>LOWONGAN CONTOH</span>
+    </div>
+    <div id="job-list"></div>
+    <div class="talent">
+      <div>
+        <p class="eyebrow">
+          STAY CONNECTED
+        </p>
+        <h3>Belum menemukan posisi yang cocok?</h3>
+        <p>
+          Kenalkan diri Anda melalui formulir talent pool.
+        </p>
+      </div>
+      <button class="button light" id="talent-button">
+        Gabung Talent Pool <span>↗</span>
+      </button>
+    </div>
+  </section>
+  <section class="process" id="proses">
+    <div>
+      <p class="eyebrow">
+        A CLEAR PATH FORWARD
+      </p>
+      <h2>
+        Setiap langkah,<br>lebih dekat.
+      </h2>
+      <p>
+        Alur seleksi yang direncanakan untuk membantu Anda memahami perjalanan melamar.
+      </p>
+    </div>
+    <ol>
+      <li>
+        <span>01</span>
+        <div>
+          <h3>Temukan posisi</h3>
+          <p>
+            Pilih peluang yang sesuai dengan pengalaman dan minat.
+          </p>
+        </div>
+      </li>
+      <li>
+        <span>02</span>
+        <div>
+          <h3>Kirim lamaran</h3>
+          <p>
+            Lengkapi profil, pengalaman, dan CV Anda.
+          </p>
+        </div>
+      </li>
+      <li>
+        <span>03</span>
+        <div>
+          <h3>Review & wawancara</h3>
+          <p>
+            HR meninjau lamaran dan menghubungi kandidat terpilih.
+          </p>
+        </div>
+      </li>
+      <li>
+        <span>04</span>
+        <div>
+          <h3>Mulai perjalanan baru</h3>
+          <p>
+            Kandidat yang lolos melanjutkan ke penawaran kerja.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </section>
+</main>
+<footer>
+  <a class="brand" href="#home">
+    <span class="brand-mark">KHO</span><span>KLIK HIRO OPTIMA<small>SMART LIVING. BRIGHT FUTURE.</small></span>
+  </a>
+  <p>
+    Pratinjau portal karir · PT Klik Hiro Optima
+  </p>
+  <a href="#home">
+    Kembali ke atas ↑
+  </a>
+</footer>
+<dialog id="detail">
+  <div class="modal-top">
+    <span>CAREERS / DETAIL POSISI</span>
+    <button class="close" aria-label="Tutup detail">
+      ×
+    </button>
+  </div>
+  <div id="detail-body"></div>
+</dialog>
+<dialog id="apply">
+  <div class="modal-top">
+    <span>CAREERS / FORMULIR LAMARAN</span>
+    <button class="close" aria-label="Tutup formulir">
+      ×
+    </button>
+  </div>
+  <h2 id="form-title">
+    Langkah baru dimulai di sini.
+  </h2>
+  <p class="form-subtitle">
+    Formulir contoh. Data dan dokumen tidak dikirim atau disimpan.
+  </p>
+  <div id="steps" class="steps"></div>
+  <form id="application">
+    <fieldset data-step="0">
+      <legend>Data diri</legend>
+      <label>
+        Posisi yang dilamar
+        <select name="position" id="position" required>
+        </select>
+      </label>
+      <div class="form-grid">
+        <label>
+          Nama lengkap *
+          <input name="name" required autocomplete="name" placeholder="Nama lengkap Anda">
+        </label>
+        <label>
+          Email *
+          <input name="email" type="email" required autocomplete="email" placeholder="nama@email.com">
+        </label>
+        <label>
+          Nomor HP *
+          <input name="phone" type="tel" required autocomplete="tel" pattern="[+0-9 ()-]{8,20}" placeholder="Contoh: 081234567890">
+        </label>
+        <label>
+          Domisili *
+          <input name="city" required autocomplete="address-level2" placeholder="Kota tempat tinggal">
+        </label>
+      </div>
+    </fieldset>
+    <fieldset data-step="1" hidden>
+      <legend>Pengalaman & ketersediaan</legend>
+      <div class="form-grid">
+        <label>
+          Posisi saat ini
+          <input name="currentRole" placeholder="Contoh: Sales Engineer">
+        </label>
+        <label>
+          Perusahaan saat ini
+          <input name="company" placeholder="Opsional">
+        </label>
+        <label>
+          Tahun pengalaman *
+          <select name="experience" required>
+            <option value="">
+              Pilih pengalaman
+            </option>
+            <option>
+              Fresh graduate
+            </option>
+            <option>
+              Kurang dari 1 tahun
+            </option>
+            <option>
+              1–2 tahun
+            </option>
+            <option>
+              3–5 tahun
+            </option>
+            <option>
+              Lebih dari 5 tahun
+            </option>
+          </select>
+        </label>
+        <label>
+          Ekspektasi gaji per bulan (Rp)
+          <input name="salary" type="number" min="0" step="1000" placeholder="Contoh: 8000000">
+        </label>
+        <label>
+          Ketersediaan mulai bekerja *
+          <select name="notice" required>
+            <option value="">
+              Pilih ketersediaan
+            </option>
+            <option>
+              Segera
+            </option>
+            <option>
+              2 minggu
+            </option>
+            <option>
+              1 bulan
+            </option>
+            <option>
+              Lebih dari 1 bulan
+            </option>
+          </select>
+        </label>
+        <label>
+          Profil LinkedIn
+          <input name="linkedin" type="url" placeholder="https://linkedin.com/in/…">
+        </label>
+      </div>
+      <label>
+        Ceritakan keahlian utama Anda
+        <textarea name="skills" rows="3" placeholder="Contoh: penjualan proyek, KNX, administrasi…">
+        </textarea>
+      </label>
+    </fieldset>
+    <fieldset data-step="2" hidden>
+      <legend>Dokumen & persetujuan</legend>
+      <label class="upload">
+        CV dalam format PDF *<span>Pilih file · Maksimal 5 MB · File hanya diperiksa di perangkat Anda</span>
+        <input id="cv" type="file" accept=".pdf,application/pdf" required>
+      </label>
+      <p id="file-info" aria-live="polite">
+      </p>
+      <label class="checkbox">
+        <input type="checkbox" name="consent" required>
+        <span>Saya memahami bahwa ini formulir pratinjau dan tidak mengirim lamaran atau dokumen. *</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="talentConsent">
+        <span>Saya berminat masuk talent pool untuk peluang mendatang. (Opsional)</span>
+      </label>
+    </fieldset>
+    <fieldset data-step="3" hidden>
+      <legend>Periksa kembali profil Anda</legend>
+      <div id="review"></div>
+      <p class="review-note">
+        Pada versi aktif, pemberitahuan privasi dan persetujuan pemrosesan data akan ditampilkan sebelum pengiriman.
+      </p>
+    </fieldset>
+    <p id="form-error" role="alert">
+    </p>
+    <div class="form-actions">
+      <button type="button" class="secondary" id="back">
+        Kembali
+      </button>
+      <span id="step-count"></span>
+      <button type="button" class="button" id="next">
+        Lanjut →
+      </button>
+    </div>
+  </form>
+  <div id="success" hidden>
+    <span class="success-icon">✓</span>
+    <h3>Pratinjau formulir selesai.</h3>
+    <p>
+      Alur pengisian sudah berhasil dicoba. Belum ada lamaran yang dikirim dan tidak ada data atau CV yang disimpan.
+    </p>
+    <button class="button" id="done">
+      Kembali ke lowongan
+    </button>
+  </div>
+</dialog>
+<script>
+// Data lowongan contoh. Konfirmasi deskripsi dan persyaratan dengan HR.
+const CAREER_JOBS = [
+  {
+    "id": "SAL-PROJ-001",
+    "title": "Sales Project",
+    "category": "Sales",
+    "family": "Sales & Business Development",
+    "location": "Tangerang / Jakarta",
+    "icon": "↗",
+    "fresh": true,
+    "about": "Berperan dalam pengembangan peluang proyek dan penawaran solusi elektrikal serta smart living.",
+    "duties": [
+      "Mengembangkan peluang proyek di area yang ditargetkan.",
+      "Melakukan presentasi solusi dan produk kepada calon pelanggan.",
+      "Menyusun penawaran dan mengikuti proses tender proyek.",
+      "Menjaga hubungan dengan klien, arsitek, dan kontraktor."
+    ],
+    "qualifications": [
+      "Pengalaman di bidang sales project menjadi pertimbangan.",
+      "Kemampuan komunikasi dan presentasi yang baik.",
+      "Mampu bekerja dengan target dan bersama tim."
+    ],
+    "plus": [
+      "Pengalaman di industri properti, hospitality, atau interior.",
+      "Pemahaman tentang smart home dan jaringan industri terkait."
+    ]
+  },
+  {
+    "id": "FIN-ARTAX-001",
+    "title": "AR & Tax Staff",
+    "category": "Finance",
+    "family": "Finance, Accounting & Tax",
+    "location": "Jakarta",
+    "icon": "≡",
+    "fresh": true,
+    "about": "Mendukung administrasi piutang, pencatatan transaksi, dan kebutuhan perpajakan.",
+    "duties": [
+      "Memantau piutang dan menyiapkan laporan penagihan.",
+      "Melakukan rekonsiliasi serta pemeriksaan dokumen transaksi.",
+      "Mendukung administrasi dan pelaporan pajak."
+    ],
+    "qualifications": [
+      "Latar belakang akuntansi atau bidang terkait.",
+      "Teliti dalam mengolah angka dan dokumen.",
+      "Mampu menggunakan spreadsheet."
+    ],
+    "plus": [
+      "Pengalaman menggunakan ERP.",
+      "Pemahaman administrasi perpajakan."
+    ]
+  },
+  {
+    "id": "WH-ADM-001",
+    "title": "Admin Warehouse",
+    "category": "Warehouse",
+    "family": "Warehouse & Logistics",
+    "location": "Tangerang",
+    "icon": "▦",
+    "fresh": true,
+    "about": "Mendukung keteraturan dokumen dan pencatatan persediaan barang di gudang.",
+    "duties": [
+      "Mencatat barang masuk dan keluar.",
+      "Menyiapkan dokumen pengiriman.",
+      "Membantu proses stock opname dan rekonsiliasi stok."
+    ],
+    "qualifications": [
+      "Teliti dan terorganisasi.",
+      "Mampu mengolah data dengan spreadsheet.",
+      "Mampu berkoordinasi dengan tim gudang."
+    ],
+    "plus": [
+      "Pengalaman administrasi gudang atau inventori."
+    ]
+  },
+  {
+    "id": "ENG-KNX-001",
+    "title": "KNX Project Engineer",
+    "category": "Engineering",
+    "family": "Engineering & Project",
+    "location": "Jakarta",
+    "icon": "⚙",
+    "fresh": false,
+    "about": "Mendukung perencanaan, konfigurasi, dan pelaksanaan proyek otomasi bangunan.",
+    "duties": [
+      "Mendukung perencanaan kebutuhan teknis proyek.",
+      "Melakukan konfigurasi dan pengujian sistem.",
+      "Menyiapkan dokumentasi dan berkoordinasi dengan tim proyek."
+    ],
+    "qualifications": [
+      "Latar belakang teknik elektro atau bidang terkait.",
+      "Memahami dasar instalasi elektrikal.",
+      "Mampu memecahkan masalah teknis."
+    ],
+    "plus": [
+      "Pengalaman KNX atau sistem otomasi bangunan."
+    ]
+  },
+  {
+    "id": "ECO-DIG-001",
+    "title": "Ecommerce Specialist",
+    "category": "Ecommerce",
+    "family": "Ecommerce & Digital",
+    "location": "Jakarta",
+    "icon": "⌑",
+    "fresh": false,
+    "about": "Mendukung pengelolaan katalog dan aktivitas penjualan melalui kanal digital.",
+    "duties": [
+      "Mengelola katalog dan informasi produk.",
+      "Memantau pesanan dan performa kanal ecommerce.",
+      "Berkoordinasi untuk kebutuhan promosi digital."
+    ],
+    "qualifications": [
+      "Memahami pengelolaan marketplace.",
+      "Teliti dalam mengelola informasi produk.",
+      "Mampu membaca data performa penjualan."
+    ],
+    "plus": [
+      "Pengalaman produk elektrikal atau interior."
+    ]
+  }
+];
+</script>
+<script>
+'use strict';
+
+/**
+ * Interaksi portal karir pratinjau.
+ * Tidak mengirim data, menyimpan profil, atau mengunggah dokumen.
+ * Data lowongan dimuat dari jobs.js sebelum file ini.
+ */
+(() => {
+  const CATEGORIES = [
+    'Semua', 'Sales', 'Finance', 'Warehouse',
+    'Engineering', 'Ecommerce', 'Administration',
+  ];
+  const FORM_STEPS = ['Data diri', 'Pengalaman', 'Dokumen', 'Review'];
+  const MAX_CV_SIZE = 5 * 1024 * 1024;
+  const TALENT_POOL = 'TALENT';
+
+  const state = { category: 'Semua', step: 0 };
+  const select = (selector) => document.querySelector(selector);
+  const elements = {
+    filters: select('#filters'),
+    search: select('#search'),
+    location: select('#location'),
+    count: select('#count'),
+    jobList: select('#job-list'),
+    detail: select('#detail'),
+    detailBody: select('#detail-body'),
+    apply: select('#apply'),
+    form: select('#application'),
+    position: select('#position'),
+    title: select('#form-title'),
+    steps: select('#steps'),
+    back: select('#back'),
+    next: select('#next'),
+    stepCount: select('#step-count'),
+    cv: select('#cv'),
+    fileInfo: select('#file-info'),
+    error: select('#form-error'),
+    review: select('#review'),
+    success: select('#success'),
+    done: select('#done'),
+  };
+
+  // Lindungi nilai dinamis sebelum dimasukkan ke HTML.
+  function escapeHtml(value) {
+    const entities = {
+      '&': '&amp;', '<': '&lt;', '>': '&gt;',
+      '"': '&quot;', "'": '&#39;',
+    };
+    return String(value ?? '').replace(/[&<>"']/g, (character) => entities[character]);
+  }
+
+  function renderBullets(items) {
+    return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
+  }
+
+  // Daftar lowongan dan filter.
+  function renderFilters() {
+    elements.filters.innerHTML = CATEGORIES.map((category) => `
+      <button
+        type="button"
+        data-category="${category}"
+        aria-pressed="${category === state.category}"
+        class="${category === state.category ? 'selected' : ''}"
+      >${category}</button>
+    `).join('');
+  }
+
+  function matchesFilters(job) {
+    const query = elements.search.value.trim().toLowerCase();
+    const location = elements.location.value;
+    const searchableText = `${job.title} ${job.family} ${job.id} ${job.location}`;
+
+    return (state.category === 'Semua' || job.category === state.category)
+      && (!location || job.location.includes(location))
+      && searchableText.toLowerCase().includes(query);
+  }
+
+  function renderJobCard(job) {
+    return `
+      <button class="job" data-job="${job.id}" aria-label="Lihat detail ${escapeHtml(job.title)}">
+        <span class="job-icon" aria-hidden="true">${job.icon}</span>
+        <div>
+          <h3>
+            ${escapeHtml(job.title)}
+            ${job.fresh ? '<span class="badge">Baru</span>' : ''}
+          </h3>
+          <p>${job.id} · ${escapeHtml(job.family)}</p>
+        </div>
+        <div class="job-meta">
+          <span>⌖ ${escapeHtml(job.location)}</span>
+          <span>◷ Full-time</span>
+        </div>
+        <span class="job-arrow" aria-hidden="true">↗</span>
+      </button>
+    `;
+  }
+
+  function renderJobs() {
+    const filteredJobs = CAREER_JOBS.filter(matchesFilters);
+    elements.count.textContent = `${filteredJobs.length} posisi tersedia dalam pratinjau`;
+    elements.jobList.innerHTML = filteredJobs.length
+      ? filteredJobs.map(renderJobCard).join('')
+      : '<p class="empty">Belum ada posisi contoh yang sesuai. Coba kata kunci lain atau pilih Semua.</p>';
+  }
+
+  function handleCategoryChange(event) {
+    const button = event.target.closest('[data-category]');
+    if (!button) return;
+
+    state.category = button.dataset.category;
+    elements.filters.querySelectorAll('button').forEach((filter) => {
+      const isSelected = filter === button;
+      filter.classList.toggle('selected', isSelected);
+      filter.setAttribute('aria-pressed', String(isSelected));
+    });
+    renderJobs();
+  }
+
+  // Detail posisi.
+  function openJobDetail(job) {
+    elements.detailBody.innerHTML = `
+      <p class="eyebrow">${escapeHtml(job.family.toUpperCase())}</p>
+      <h2>${escapeHtml(job.title)}</h2>
+      <div class="detail-meta">
+        <span>${job.id}</span>
+        <span>⌖ ${escapeHtml(job.location)}</span>
+        <span>Full-time</span>
+      </div>
+      <p>Contoh deskripsi untuk pratinjau. Persyaratan final perlu dikonfirmasi HR.</p>
+      <h3>Tentang posisi ini</h3>
+      <p>${escapeHtml(job.about)}</p>
+      <h3>Tanggung jawab utama</h3>
+      ${renderBullets(job.duties)}
+      <h3>Kualifikasi</h3>
+      ${renderBullets(job.qualifications)}
+      <h3>Nilai tambah</h3>
+      ${renderBullets(job.plus)}
+      <button class="button" id="apply-job">Coba Formulir Lamaran ↗</button>
+    `;
+    select('#apply-job').addEventListener('click', () => {
+      elements.detail.close();
+      openApplication(job.id);
+    });
+    elements.detail.showModal();
+  }
+
+  function handleJobClick(event) {
+    const button = event.target.closest('[data-job]');
+    if (!button) return;
+
+    const job = CAREER_JOBS.find((item) => item.id === button.dataset.job);
+    if (job) openJobDetail(job);
+  }
+
+  function initializeDialogs() {
+    document.querySelectorAll('.close').forEach((button) => {
+      button.addEventListener('click', () => button.closest('dialog').close());
+    });
+
+    document.querySelectorAll('dialog').forEach((dialog) => {
+      dialog.addEventListener('click', (event) => {
+        if (event.target !== dialog) return;
+
+        const bounds = dialog.getBoundingClientRect();
+        const isOutside = event.clientX < bounds.left
+          || event.clientX > bounds.right
+          || event.clientY < bounds.top
+          || event.clientY > bounds.bottom;
+
+        if (isOutside) dialog.close();
+      });
+    });
+  }
+
+  // Formulir bertahap dan validasi lokal.
+  function resetApplication() {
+    elements.form.reset();
+    elements.cv.setCustomValidity('');
+    elements.review.replaceChildren();
+    elements.fileInfo.textContent = '';
+    elements.error.textContent = '';
+  }
+
+  function openApplication(position) {
+    resetApplication();
+    state.step = 0;
+    elements.position.value = position;
+    elements.title.textContent = position === TALENT_POOL
+      ? 'Kenalkan potensi Anda.'
+      : 'Langkah baru dimulai di sini.';
+    elements.form.hidden = false;
+    elements.success.hidden = true;
+    elements.steps.hidden = false;
+    renderStep();
+    elements.apply.showModal();
+  }
+
+  function renderStep() {
+    elements.steps.innerHTML = FORM_STEPS.map((label, index) => `
+      <span
+        class="${index === state.step ? 'current' : ''}"
+        ${index === state.step ? 'aria-current="step"' : ''}
+      >${index + 1}. ${label}</span>
+    `).join('');
+
+    elements.form.querySelectorAll('[data-step]').forEach((fieldset) => {
+      fieldset.hidden = Number(fieldset.dataset.step) !== state.step;
+    });
+
+    elements.back.disabled = state.step === 0;
+    elements.next.textContent = state.step === FORM_STEPS.length - 1
+      ? 'Selesaikan Pratinjau ✓'
+      : 'Lanjut →';
+    elements.stepCount.textContent = `Langkah ${state.step + 1} dari ${FORM_STEPS.length}`;
+    elements.error.textContent = '';
+
+    if (state.step === FORM_STEPS.length - 1) renderReview();
+  }
+
+  function validateCurrentStep() {
+    const fieldset = elements.form.querySelector(`[data-step="${state.step}"]`);
+    const inputs = fieldset.querySelectorAll('input, select, textarea');
+
+    for (const input of inputs) {
+      if (!input.reportValidity()) return false;
+    }
+    return true;
+  }
+
+  function validateCv() {
+    const file = elements.cv.files[0];
+    elements.cv.setCustomValidity('');
+    elements.fileInfo.textContent = '';
+    elements.error.textContent = '';
+    if (!file) return;
+
+    let error = '';
+    const isPdf = /\.pdf$/i.test(file.name)
+      && (!file.type || file.type === 'application/pdf');
+
+    if (!isPdf) {
+      error = 'Pilih CV dalam format PDF.';
+    } else if (file.size > MAX_CV_SIZE) {
+      error = 'Ukuran CV maksimal 5 MB.';
+    } else if (file.size === 0) {
+      error = 'File CV kosong. Pilih file lain.';
+    }
+
+    const sizeInMb = (file.size / 1024 / 1024).toFixed(2);
+    elements.cv.setCustomValidity(error);
+    elements.fileInfo.textContent = error
+      || `${file.name} · ${sizeInMb} MB · Belum diunggah`;
+    elements.error.textContent = error;
+  }
+
+  function goBack() {
+    if (state.step === 0) return;
+    state.step -= 1;
+    renderStep();
+  }
+
+  function goNext() {
+    if (!validateCurrentStep()) return;
+
+    if (state.step < FORM_STEPS.length - 1) {
+      state.step += 1;
+      renderStep();
+      elements.apply.scrollTop = 0;
+      return;
+    }
+    completePreview();
+  }
+
+  function completePreview() {
+    elements.form.hidden = true;
+    elements.steps.hidden = true;
+    elements.success.hidden = false;
+    elements.apply.scrollTop = 0;
+    resetApplication();
+    elements.done.focus();
+  }
+
+  function renderReview() {
+    const data = new FormData(elements.form);
+    const salary = data.get('salary');
+    const formattedSalary = salary
+      ? new Intl.NumberFormat('id-ID', {
+          style: 'currency',
+          currency: 'IDR',
+          maximumFractionDigits: 0,
+        }).format(Number(salary))
+      : '—';
+
+    const rows = [
+      ['Posisi', elements.position.selectedOptions[0].textContent],
+      ['Nama', data.get('name')],
+      ['Email', data.get('email')],
+      ['Nomor HP', data.get('phone')],
+      ['Domisili', data.get('city')],
+      ['Posisi saat ini', data.get('currentRole') || '—'],
+      ['Perusahaan', data.get('company') || '—'],
+      ['Pengalaman', data.get('experience')],
+      ['Ekspektasi gaji', formattedSalary],
+      ['Ketersediaan', data.get('notice')],
+      ['LinkedIn', data.get('linkedin') || '—'],
+      ['Keahlian', data.get('skills') || '—'],
+      ['CV', elements.cv.files[0]?.name || '—'],
+      ['Minat talent pool', data.get('talentConsent') ? 'Ya' : 'Tidak'],
+    ];
+
+    elements.review.innerHTML = rows.map(([label, value]) => `
+      <div class="review-row">
+        <span>${label}</span>
+        <strong>${escapeHtml(value)}</strong>
+      </div>
+    `).join('');
+  }
+
+  // Inisialisasi hanya dilakukan setelah HTML dan data lowongan tersedia.
+  function initialize() {
+    elements.position.innerHTML = CAREER_JOBS.map((job) => `
+      <option value="${job.id}">${escapeHtml(job.title)} (${job.id})</option>
+    `).join('') + `<option value="${TALENT_POOL}">Talent Pool — Belum memilih posisi</option>`;
+
+    elements.filters.addEventListener('click', handleCategoryChange);
+    elements.search.addEventListener('input', renderJobs);
+    elements.location.addEventListener('change', renderJobs);
+    elements.jobList.addEventListener('click', handleJobClick);
+    elements.cv.addEventListener('change', validateCv);
+    elements.back.addEventListener('click', goBack);
+    elements.next.addEventListener('click', goNext);
+    elements.done.addEventListener('click', () => elements.apply.close());
+    elements.apply.addEventListener('close', resetApplication);
+    select('#talent-button').addEventListener('click', () => openApplication(TALENT_POOL));
+    elements.form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      goNext();
+    });
+
+    initializeDialogs();
+    renderFilters();
+    renderJobs();
+  }
+
+  initialize();
+})();
+</script>
+</body>
+</html>
